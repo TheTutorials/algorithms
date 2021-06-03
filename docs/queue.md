@@ -5,7 +5,7 @@
 
 队列的操作方式和堆栈类似，唯一的区别在于队列只允许新数据在后端进行添加。
 
-![队列](../images/queue.png)
+<img src="../images/queue.png" width = "200" >
 
 ### 队列的分类
 * 顺序存储
@@ -116,3 +116,5 @@ void clear(Queue *pQueue) {
     pQueue->front = pQueue->rear = 0;
 }
 ```
+
+### 完整代码
