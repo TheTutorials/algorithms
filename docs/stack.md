@@ -11,6 +11,9 @@
 #### 顺序栈
 使用一段连续的存储空间(数组)保存数据元素，下标 `0` 位置表示栈底，`top` 表示栈顶指针。
 
+<img src="../images/stack-operation.png" >
+
+
 ##### 结构体定义
 ``` c
 typedef int ElemType;
@@ -20,13 +23,17 @@ typedef struct Stack {
 } Stack;
 ```
 ##### 初始化栈
+* 给数组分配内存空间
+* 初始化栈顶指针为 `-1` 表示为空
 ``` c
 void initStack(Stack *pStack) {
     pStack->base = malloc(MAX_SIZE * sizeof(ElemType));
     pStack->top = -1;
 }
 ```
+
 ##### 判断栈是否为空
+* 判断栈顶指针是否为 `-1`
 ``` c
 bool isEmpty(Stack *pStack) {
     return pStack->top == -1;
@@ -95,6 +102,7 @@ ElemType peek(Stack *pStack) {
 
 #### 链栈
 使用链表实现的栈称之为链栈，为了增加入栈和出栈的效率，采用头插法（入栈）和头删法（出栈）。
+![链栈](../images/linked-stack.png)
 
 ##### 链栈结构体类型定义
 
