@@ -3,4 +3,5 @@
 ### 线性表
 * [线性表](docs/linear-list.md)
 * [顺序表](docs/array-list.md)
+* [栈]()
 * [队列](docs/queue.md)
