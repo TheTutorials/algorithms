@@ -97,7 +97,7 @@ ElemType get(ArrayList *pList, int index) {
 * 顺序表长度 `+1`
 * 返回1表示插入成功
 
-    <img src="../images/arraylist-insertion.gif" width = "300" >
+    <img src="../images/arraylist-insertion.gif" >
 
 
 ``` c
@@ -125,7 +125,7 @@ bool insertNth(ArrayList *plist, int index, ElemType element) {
 * 顺序表长度 `-1`
 * 返回 `1` 表示成功
 
-    <img src="../images/arraylist-deletion.gif" width = "300" >
+    <img src="../images/arraylist-deletion.gif" >
 
 ``` java
 ElemType deleteNth(ArrayList *plist, int index) {
