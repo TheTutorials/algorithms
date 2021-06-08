@@ -97,6 +97,9 @@ ElemType get(ArrayList *pList, int index) {
 * 顺序表长度 `+1`
 * 返回1表示插入成功
 
+    <img src="../images/arraylist-insertion.gif" width = "300" >
+
+
 ``` c
 bool insertNth(ArrayList *plist, int index, ElemType element) {
     if (index < 0 || index > plist->size) {
@@ -121,6 +124,8 @@ bool insertNth(ArrayList *plist, int index, ElemType element) {
 * 从删除位置开始逐个把后面的元素往前移动一个位置。
 * 顺序表长度 `-1`
 * 返回 `1` 表示成功
+
+    <img src="../images/arraylist-deletion.gif" width = "300" >
 
 ``` java
 ElemType deleteNth(ArrayList *plist, int index) {
