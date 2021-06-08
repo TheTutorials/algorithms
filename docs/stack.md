@@ -13,6 +13,9 @@
 
 <img src="../images/stack-operation.png" >
 
+入栈出栈动态效果
+
+<img src="../images/stack-animation.gif" >
 
 ##### 结构体定义
 ``` c
