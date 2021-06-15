@@ -9,3 +9,4 @@
 
 ### 树形结构
 [树得基本概念](docs/tree.md)
+[树的存储结构](docs/tree_storage_structure.md)
