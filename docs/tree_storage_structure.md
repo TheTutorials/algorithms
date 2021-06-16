@@ -28,4 +28,4 @@
 * 每个单链表的头指针组成线性表，采用顺序存储结构
 * n个结点有n个孩子链表，如果是叶子结点则此单链表为空
 
-<img src="../images/tree_child_presentation.png" width = "300" >
+<img src="../images/tree_child_presentation.png" >
