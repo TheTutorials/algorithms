@@ -16,3 +16,16 @@
 * 缺点: 由上向下找就十分慢，若要找结点的孩子或者兄弟，要遍历整个树
 
 [代码实现](https://github.com/examplehub/C/blob/master/datastructures/tree/parent_tree.c)
+
+### 双亲表示法改进
+* 增加结点最左边的孩子域易于得到结点的孩子
+* 如果没有孩子的结点，这左孩子域就置为-1
+
+<img src="../images/tree_parent_presentation_pro.png" width = "300" >
+
+### 孩子表示法
+* 每个结点的孩子以单链表作为存储结构
+* 每个单链表的头指针组成线性表，采用顺序存储结构
+* n个结点有n个孩子链表，如果是叶子结点则此单链表为空
+
+<img src="../images/tree_child_presentation.png" width = "300" >
