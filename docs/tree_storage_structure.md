@@ -21,6 +21,12 @@
 * 增加结点最左边的孩子域易于得到结点的孩子
 * 如果没有孩子的结点，这左孩子域就置为-1
 
+结点定义
+
+<img src="../images/tree_parent_presentation_pro_node.png" width = "300" >
+
+示意图
+
 <img src="../images/tree_parent_presentation_pro.png" width = "300" >
 
 ### 孩子表示法
@@ -29,3 +35,16 @@
 * n个结点有n个孩子链表，如果是叶子结点则此单链表为空
 
 <img src="../images/tree_child_presentation.png" >
+
+
+### 孩子兄弟表示法
+* 采用链式存储，描述结点的孩子、兄弟关系
+* 设置两个指针，分别指向该结点的第一个孩子和此结点的右兄弟
+
+结点定义
+
+<img src="../images/tree_child_brother_node.png" >
+
+示意图
+
+<img src="../images/tree_child_brother_presentation.png" >
