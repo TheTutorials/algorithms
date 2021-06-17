@@ -24,7 +24,7 @@
 <img src="../images/full_binary_tree.png" width = "300" >
 
 性质: 
-* 同样深度的满二叉树，结点数量最多
+* 同样深度的二叉树中满二叉树结点数量最多
 * 第`i`层的结点数量为: 2<sup>i - 1</sup>
 * 深度为`k`的满二叉树，结点数量为: 2<sup>k</sup>-1，叶子数为2<sup>k-1</sup>
 * 满二叉树中不存在度为 1 的节点，每一个分支点中都两棵深度相同的子树，且叶子节点都在最底层
@@ -57,4 +57,28 @@
 #### 完全二叉树(满二叉树)的顺序存储结构
 使用数组依次从上到下、自左向右存储所有的结点元素
 
+示例完全二叉树
+
 <img src="../images/binary_tree_numober.png" width = "300" >
+
+<img src="../images/array_structure_of_binary_tree.png"/>
+
+我们还可以根据满二叉树的顺序存储结构恢复二叉树
+
+
+#### 存储非完全二叉树
+
+* 添加虚构结点构造完全二叉树
+<img src="../images/not_complete_binary_tree.png"/>
+
+* 由上往下，由左往右存放，虚设结点表示为空
+
+<img src="../images/array_structure_of_binary_tree_02.png"/>
+
+
+#### 顺序存储存在的问题
+
+* 浪费存储空间，存储密度低
+
+<img src="../images/not_complete_binary_tree_02.png"/>
+
