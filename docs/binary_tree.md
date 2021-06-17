@@ -71,19 +71,19 @@
 #### 存储非完全二叉树
 
 * 添加虚构结点构造完全二叉树
-<img src="../images/not_complete_binary_tree.png"/>
+<img src="../images/not_complete_binary_tree.png" width = "300"/>
 
 * 由上往下，由左往右存放，虚设结点表示为空
 
-<img src="../images/array_structure_of_binary_tree_02.png"/>
+<img src="../images/array_structure_of_binary_tree_02.png" width = "300"/>
 
 
 #### 顺序存储存在的问题
 
 * 浪费存储空间，存储密度低
 
-<img src="../images/not_complete_binary_tree_02.png"/>
+<img src="../images/not_complete_binary_tree_02.png " width = "300"/>
 
 对应的数组示意图
 
-<img src="../images/array_structure_of_binary_tree_03.png"/>
+<img src="../images/array_structure_of_binary_tree_03.png" width = "300">
