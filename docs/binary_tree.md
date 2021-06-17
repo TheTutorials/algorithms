@@ -87,3 +87,12 @@
 对应的数组示意图
 
 <img src="../images/array_structure_of_binary_tree_03.png" width = "300">
+
+### 二叉树的链式存储(二叉链表)
+因为二叉树中只存在度为`0`, `1`, `2` 的结点，所以我们可以把二叉树的结点类型定义为包含 数据域、左孩子指针、右孩子指针三个成员属性。
+
+<img src="../images/tree_parent_presentation_pro_node.png" width = "300">
+
+下图表示了二叉树的二叉链表存储结构
+
+<img src="../images/binary_tree_presentation_01.PNG" width = "300">
