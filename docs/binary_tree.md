@@ -57,3 +57,4 @@
 #### 完全二叉树(满二叉树)的顺序存储结构
 使用数组依次从上到下、自左向右存储所有的结点元素
 
+<img src="../images/binary_tree_numober.png" width = "300" >
