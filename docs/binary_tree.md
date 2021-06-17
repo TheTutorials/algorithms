@@ -40,6 +40,8 @@
 * 最后一层的叶子结点集中在左边连续的位置
 * 除最后一层是一棵满二叉树
 
+注意: 满二叉树一定是完全二叉树，但是完全二叉树不一定是满二叉树
+
 ### 二叉树的性质
 
 * 性质1: 在非空二叉树的第i层上，至多有2<sup>i-1</sup>个结点(`i>=1`)
@@ -82,3 +84,6 @@
 
 <img src="../images/not_complete_binary_tree_02.png"/>
 
+对应的数组示意图
+
+<img src="../images/array_structure_of_binary_tree_03.png"/>
