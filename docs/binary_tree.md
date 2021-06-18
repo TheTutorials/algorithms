@@ -53,6 +53,76 @@
     - 若 2*i>n，则该结点无左孩子，否则，其左孩子结点是编号为 2*i 的结点
     - 若 2*i+1>n，则该结点无右孩子结点，否则，其右孩子结点是编号为2*i+1 的结点
 
+### 二叉树的遍历
+在计算机科学里，树的遍历（也称为树的搜索）是图的遍历的一种，指的是按照某种规则，不重复地访问某种树的所有节点的过程。具体的访问操作可能是检查节点的值、更新节点的值等。不同的遍历方式，其访问节点的顺序是不一样的。
+
+#### 先序遍历(Pre-Order Traversal)
+1. 访问跟节点
+2. 遍历左子树
+3. 遍历右子树
+
+<img src="../images/binary_tree_preorder.png" width = "300" >
+
+深度优先遍历 - 前序遍历：F, B, A, D, C, E, G, I, H.
+
+<img src="../images/binary-tree-1-pre-order-small.gif" width = "300" >
+
+代码实现
+``` c
+void preOrder(Node *root) {
+    if (root != NULL) {
+        printf("%d", root->data);
+        preOrder(root->left);
+        preOrder(root->right);
+    }
+}
+```
+
+#### 中序遍历(In-Order Traversal)
+1. 遍历左子树
+2. 访问跟节点
+3. 遍历右子树
+
+<img src="../images/binary_tree_inorder.png" width = "300" >
+
+<img src="../images/binary-tree-1-order-small.gif" width = "300" >
+
+
+代码实现
+``` c
+void inOrder(Node *root) {
+    if (root != NULL) {
+        inOrder(root->left);
+        printf("%d", root->data);
+        inOrder(root->right);
+    }
+}
+```
+
+#### 后序遍历(Post-Order Traversal)
+1. 遍历左子树
+2. 遍历右子树
+3. 访问跟节点
+
+<img src="../images/binary_tree_postorder.png" width = "300" >
+
+<img src="../images/binary-tree-1-post-order-small.gif" width = "300" >
+
+代码实现
+``` c
+void postOrder(Node *root) {
+    if (root != NULL) {
+        postOrder(root->left);
+        postOrder(root->right);
+        printf("%d", root->data);
+    }
+}
+```
+
+#### 广度优先遍历
+和深度优先遍历不同，广度优先遍历会先访问离根节点最近的节点。二叉树的广度优先遍历又称按层次遍历。算法借助队列实现。
+
+
 
 ### 二叉树的顺序存储结构
 
@@ -96,3 +166,56 @@
 下图表示了二叉树的二叉链表存储结构
 
 <img src="../images/binary_tree_presentation_01.PNG" width = "300">
+
+二叉链表节点定义
+``` c
+typedef int ElemType; /* 假设数据类型为char */
+typedef struct Node {
+    ElemType data; /* 数据域 */
+    struct Node *left; /* 左孩子指针 */
+    struct Node *right; /* 右孩子指针 */
+} Node;
+```
+
+
+手动构造一颗二叉树
+
+<img src="../images/example_binary_tree.png" width = "300">
+
+
+``` c
+Node *createNode(int data) {
+    Node *newNode = (malloc(sizeof(Node)));
+    newNode->data = data;
+    return newNode;
+}
+
+void test() {
+    /* see images/example_binary_tree.png */
+    Node *root = createNode(1);
+    Node *node2 = createNode(2);
+    Node *node3 = createNode(3);
+    Node *node4 = createNode(4);
+    Node *node5 = createNode(5);
+
+    root->left = node2;
+    root->right = node3;
+
+    node2->left = node4;
+    node2->right = node5;
+
+    node3->left = node3->right = NULL;
+    node4->left = node4->right = NULL;
+    node5->left = node5->right = NULL;
+
+    preOrder(root); /* output: 12453 */
+    printf("\n");
+
+    inOrder(root); /* output: 42513 */
+    printf("\n");
+
+    postOrder(root); /* output:  45231 */
+    printf("\n");
+}
+```
+
