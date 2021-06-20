@@ -219,6 +219,66 @@ void test() {
 }
 ```
 
+递归创建二叉树
+``` c
+typedef struct node {
+    ElemType data;
+    struct node *left;
+    struct node *right;
+} node;
+
+node* create() {
+    ElemType data;
+    scanf("%d", &data);
+    if (data == -1) {
+       return NULL;
+    }
+    node *root = (node *) malloc(sizeof(node));
+    if (root == NULL) {
+        exit(OVERFLOW);
+    }
+    root->data = data;
+    root->left = create(); /* create left sub tree */
+    root->right = create(); /* create right sub tree */
+    return root;
+}
+
+void preOrder(node *root) {
+    if (root != NULL) {
+        printf("%d", root->data);
+        preOrder(root->left);
+        preOrder(root->right);
+    }
+}
+
+void postOrder(node *root) {
+    if (root != NULL) {
+        postOrder(root->left);
+        postOrder(root->right);
+        printf("%d", root->data);
+    }
+}
+
+void inOrder(node *root) {
+    if (root != NULL) {
+        inOrder(root->left);
+        printf("%d", root->data);
+        inOrder(root->right);
+    }
+}
+
+void test() {
+    printf("please input data:");
+    node *root = create(); /* input: 1 2 4 -1 -1 5 -1 -1 3 -1 -1 */
+    preOrder(root); /* 12453 */
+    printf("\n");
+    inOrder(root); /* 42513 */
+    printf("\n");
+    postOrder(root); /* 45231 */
+    printf("\n");
+}
+```
+
 ### 二叉树，树，森林之间的转换
 
 #### 树转化成二叉树
