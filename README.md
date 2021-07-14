@@ -10,7 +10,7 @@
 ### 树形结构
 * [树得基本概念](docs/tree.md)
 * [树的存储结构](docs/tree/树的存储结构.md)
-* [二叉树](docs/tree/binary_tree.md)
+* [二叉树](docs/tree/二叉树.md)
 
 ### 图形结构
 * [图的基本概念]()
