@@ -20,3 +20,5 @@
 ### 排序
 * [直接插入排序](docs/sort/直接插入排序.md)
 * [希尔排序](docs/sort/希尔排序.md)
+* [冒泡排序](docs/sort/冒泡排序.md)
+* [快速排序](docs/sort/快速排序.md)
