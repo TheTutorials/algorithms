@@ -22,3 +22,4 @@
 * [希尔排序](docs/sort/希尔排序.md)
 * [冒泡排序](docs/sort/冒泡排序.md)
 * [快速排序](docs/sort/快速排序.md)
+* [选择排序](docs/sort/选择排序.md)
