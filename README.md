@@ -5,6 +5,7 @@
 
 ### 查找
 * [折半查找](docs/search/折半查找.md)
+* [折半查找](docs/search/顺序查找.md)
 ### 线性结构
 * [线性表](docs/linear-list.md)
 * [顺序表](docs/array-list.md)
